@@ -13,5 +13,8 @@
       "48": "images/sensetime_logo.png",
       "128": "images/sensetime_logo.png"
     }
+  },
+  "side_panel": {
+    "default_path": "./pages/sidepanel.html"
   }
 }
