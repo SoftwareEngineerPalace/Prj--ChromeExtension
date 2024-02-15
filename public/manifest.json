@@ -3,7 +3,13 @@
   "description": "商汤 AI 助手小商 Demo V0.1",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["storage", "sidePanel", "contextMenus"],
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "contextMenus",
+    "activeTab",
+    "scripting"
+  ],
   "action": {
     "default_popup": "./pages/popup.html?n=1",
     "default_title": "Click to open panel",
@@ -14,6 +20,12 @@
       "128": "images/sensetime_logo.png"
     }
   },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content-script.js"]
+    }
+  ],
   "side_panel": {
     "default_path": "./pages/sidepanel.html"
   }
