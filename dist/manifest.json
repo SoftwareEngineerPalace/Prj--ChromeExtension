@@ -1,0 +1,17 @@
+{
+  "name": "小商",
+  "description": "商汤 AI 助手小商 Demo V0.1",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "sidePanel", "contextMenus"],
+  "action": {
+    "default_popup": "./pages/popup.html?n=1",
+    "default_title": "Click to open panel",
+    "default_icon": {
+      "16": "images/sensetime_logo.png",
+      "32": "images/sensetime_logo.png",
+      "48": "images/sensetime_logo.png",
+      "128": "images/sensetime_logo.png"
+    }
+  }
+}
