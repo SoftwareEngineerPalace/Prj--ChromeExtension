@@ -1,1 +1,1 @@
-console.log("content init 3");
+const e=new DOMParser().parseFromString("<button>Click to open side panel</button>","text/html").body.firstElementChild;e.addEventListener("click",function(){console.log("sendMessage open_side_panel",chrome.runtime),chrome.runtime.sendMessage({type:"open_side_panel"})});document.body.prepend(e);console.log("content-script 1");
