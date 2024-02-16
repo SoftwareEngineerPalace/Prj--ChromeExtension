@@ -11,6 +11,15 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "src/pages"),
     },
   },
+  css: {
+    // 配置 css-module
+    modules: {
+      // 开启 camelCase 格式变量名转换
+      localsConvention: "camelCase",
+      // 类名 前缀
+      generateScopedName: "[local]-[hash:base64:5]",
+    },
+  },
   build: {
     rollupOptions: {
       input: {

@@ -3,7 +3,6 @@ const button = new DOMParser().parseFromString(
   "text/html"
 ).body.firstElementChild;
 button!.addEventListener("click", function () {
-  console.log("sendMessage open_side_panel", chrome.runtime);
   chrome.runtime.sendMessage({ type: "open_side_panel" });
 });
 document.body.prepend(button!);
